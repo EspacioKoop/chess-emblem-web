@@ -1,4 +1,4 @@
-const CACHE = 'chess-emblem-v3';
+const CACHE = 'chess-emblem-v4';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg', './mq_js_bundle.js', './chess_emblem.wasm'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)));
