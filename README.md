@@ -6,6 +6,6 @@ Este repositorio solo contiene el resultado compilado (WebAssembly + runtime web
 
 ## Jugar
 
-Abre la URL de GitHub Pages y elige un nivel entre los 15 disponibles. Selecciona una unidad y pulsa una casilla marcada para mover o atacar. `W` (o el botón táctil) cambia el arma de la unidad seleccionada una vez por turno; el color del marco indica ventaja, empate o desventaja. El combate usa precisión, daño y PV; hay contraataque si el defensor alcanza al atacante. El rival usa una IA sencilla y los jefes aún no tienen patrones exclusivos.
+Abre la URL de GitHub Pages y elige un nivel entre los 15 disponibles. Selecciona una unidad y pulsa una casilla marcada para mover; sobre un rival, el primer toque muestra la previsión de combate (acierto, daño y contraataque) y el segundo confirma el ataque. `W` (o el botón táctil) cambia el arma de la unidad seleccionada una vez por turno; el color del marco indica ventaja, empate o desventaja. `U` deshace tus jugadas paso a paso y `R` rehace la última deshecha. El combate usa precisión, daño y PV; hay contraataque si el defensor alcanza al atacante. El rival puntúa todas sus acciones legales y ejecuta la mejor; los jefes aún no tienen patrones exclusivos.
 
-Puede instalarse como aplicación web desde el menú del navegador y funciona sin conexión tras la primera carga.
+El progreso de niveles superados y el botín se guarda en `localStorage` del navegador y sobrevive al cerrar la pestaña. Puede instalarse como aplicación web desde el menú del navegador y funciona sin conexión tras la primera carga.

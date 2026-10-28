@@ -1,5 +1,5 @@
-const CACHE = 'chess-emblem-v4';
-const FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg', './mq_js_bundle.js', './chess_emblem.wasm'];
+const CACHE = 'chess-emblem-v5';
+const FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg', './mq_js_bundle.js', './storage_plugin.js', './chess_emblem.wasm'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)));
   self.skipWaiting();
