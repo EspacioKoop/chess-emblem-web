@@ -18,8 +18,9 @@
 <body>
   <canvas id="glcanvas" tabindex="1"></canvas>
   <script>var register_plugin;</script>
-  <script src="storage_plugin.js"></script>
   <script src="mq_js_bundle.js"></script>
+  <!-- El plugin usa miniquad_add_plugin, definido por el bundle: va después. -->
+  <script src="storage_plugin.js"></script>
   <script>load("chess_emblem.wasm");</script>
   <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
 </body>
